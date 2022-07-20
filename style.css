@@ -1,0 +1,66 @@
+.h-section {
+    width: 90%;
+    margin: 3em auto;
+    /* background-color: #150328; */
+    border-radius: 2em;
+    background-image: url(assets/background3.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.h-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h-text,
+.h-image {
+    width: 40%;
+    margin-top: 1.5em;
+}
+
+.h-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.h-text {
+    color: rgb(0, 0, 0);
+}
+
+.h-text p {
+    margin: 3em 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.h-text h1 {
+    font-size: 5em;
+
+}
+
+.watch-button {
+    background-color: rgb(255, 0, 0);
+    width: 130px;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+.watch-button:hover {
+    background-color: rgb(0, 8, 160);
+    transition: 1s;
+}
+
+
+.watch-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+}
