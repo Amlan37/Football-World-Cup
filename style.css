@@ -244,6 +244,12 @@ nav ul li a {
     display: hide;
 }
 
+.amlan {
+    text-align: right;
+    color: tomato;
+    font-size: 10px;
+}
+
 /* ---Upcoming--- */
 .matchs-container {
     grid-column-gap: 50px;
