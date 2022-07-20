@@ -315,6 +315,11 @@ nav ul li a {
         width: 45%;
     }
 
+    .watch-button:hover {
+        background-color: rgb(0, 8, 160);
+        transition: 1s;
+    }
+
     .last-blog {
         display: none;
     }
@@ -390,6 +395,11 @@ nav ul li a {
     .watch-button {
         width: 50%;
         margin: 0 auto;
+    }
+
+    .watch-button:hover {
+        background-color: rgb(0, 8, 160);
+        transition: 1s;
     }
 
     nav ul {
