@@ -37,6 +37,7 @@ body {
 }
 
 .h-text {
+    font-family: 'Josefin Sans', sans-serif;
     color: rgb(0, 0, 0);
 }
 
@@ -73,7 +74,7 @@ body {
 }
 
 
-*--------------------- Start of Main Section -------------------------*/
+/*--------------------- Start of Main Section -------------------------*/
 /* -----------------------Blogs----------------------------------- */
 
 
@@ -108,6 +109,7 @@ body {
 }
 
 .page p {
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,12 +181,7 @@ body {
     display: block;
 }
 
-/* .view-all {
-    width: 20%;
-    margin: 30px auto;
-    border-radius: 10px;
-    display: none;
-} */
+
 
 footer {
     width: 100%;
@@ -199,7 +196,7 @@ footer {
 
 
 footer {
-    background-color: rgb(178, 117, 26);
+    background-color: rgb(31, 65, 169);
 }
 
 footer h1 {
@@ -243,4 +240,205 @@ nav ul li a {
 
 .logos a {
     color: white;
+}
+
+.f-border {
+    border-bottom: 1px solid rgb(133, 164, 198);
+    padding-bottom: 15px;
+}
+
+
+/* -----------------------Upcoming Match----------------------------------- */
+.matchs-container {
+    grid-column-gap: 50px;
+}
+
+.match-control {
+    width: 25%;
+}
+
+.match-container {
+    padding: 15px;
+    width: 90%;
+    box-shadow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-image {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.match-image img {
+    width: 41%;
+}
+
+
+
+.match-details h3 {
+    margin: 10px 0;
+}
+
+.match-details p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.upcomig {
+    background-color: rgb(7, 1, 76) !important;
+}
+
+.upcomig a {
+    color: white !important;
+
+}
+
+
+
+
+
+
+/* ---For mobile--- */
+
+@media screen and (max-width:576px) {
+    .h-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .h-text h1 {
+        font-size: 2em;
+        margin-top: 15px;
+    }
+
+    .h-text,
+    .h-image {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h-text p {
+        margin: 1.5em 0;
+    }
+
+    .watch-button {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        height: 90vh;
+
+    }
+
+    .logos i {
+        font-size: 25px;
+    }
+
+    .blogs-container {
+        grid-template-columns: 1fr;
+        clear: left;
+    }
+
+    .tabs {
+        flex-direction: column;
+        background-color: white;
+        border-radius: 2px;
+
+    }
+
+    .tabs p {
+        width: 300px;
+        flex-direction: row;
+        padding: 2px 5px;
+        box-shadow: 2px 1px 10px 3px gray;
+    }
+
+    .tabs a {
+        flex-direction: row;
+        font-size: 25px;
+    }
+
+    .all-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .control-of-page {
+        margin-bottom: 30px;
+
+    }
+}
+
+
+/* ---For Tab--- */
+
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .h-text h1 {
+        font-size: 1.5em;
+        margin-top: 3em;
+    }
+
+    .h-text,
+    .h-image {
+        width: 45%;
+    }
+
+    .last-blog {
+        display: none;
+    }
+
+    .all-container {
+        clear: both;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogs-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tabs {
+        margin: auto;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 0;
+    }
+
+    .page {
+        width: 99%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+
+    .tabs p {
+        margin-right: 20px;
+        justify-content: space-between;
+        box-shadow: 2px 1px 10px 3px gray;
+        font-size: 18px;
+    }
+
 }
