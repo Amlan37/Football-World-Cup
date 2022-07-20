@@ -65,6 +65,10 @@
     font-weight: 600;
 }
 
+.w-button {
+    display: none;
+}
+
 
 
 /* ---Blogs--- */
@@ -170,6 +174,8 @@
     display: block;
 }
 
+
+
 /* ---start of footer */
 
 footer {
@@ -207,6 +213,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .logos {
@@ -229,6 +237,12 @@ nav ul li a {
     padding-bottom: 15px;
 }
 
+.view-all {
+    width: 20%;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: hide;
+}
 
 /* ---Upcoming--- */
 .matchs-container {
@@ -281,9 +295,64 @@ nav ul li a {
 }
 
 
+/* ---For Tab--- */
 
 
+@media screen and (max-width:821px) {
+    .h-text h1 {
+        font-size: 1.5em;
+        margin-top: 3em;
+    }
 
+    .h-text,
+    .h-image {
+        width: 45%;
+    }
+
+    .last-blog {
+        display: none;
+    }
+
+    .all-container {
+        clear: both;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogs-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tabs {
+        margin: auto;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 0;
+    }
+
+    .page {
+        width: 99%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+
+    .tabs p {
+        margin-right: 20px;
+        justify-content: space-between;
+        box-shadow: 2px 1px 10px 3px gray;
+        font-size: 18px;
+    }
+
+    .view-all {
+        display: block;
+    }
+
+    .w-button {
+        display: block;
+    }
+
+}
 
 /* ---For mobile--- */
 
@@ -371,56 +440,8 @@ nav ul li a {
         margin-bottom: 30px;
 
     }
-}
 
-
-/* ---For Tab--- */
-
-
-@media screen and (min-width:577px) and (max-width:768px) {
-    .h-text h1 {
-        font-size: 1.5em;
-        margin-top: 3em;
-    }
-
-    .h-text,
-    .h-image {
-        width: 45%;
-    }
-
-    .last-blog {
+    .w-button {
         display: none;
     }
-
-    .all-container {
-        clear: both;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .blogs-container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .tabs {
-        margin: auto;
-        flex-direction: row;
-        background-color: white;
-        border-radius: 0;
-    }
-
-    .page {
-        width: 99%;
-        margin: auto;
-        margin-bottom: 25px;
-    }
-
-
-    .tabs p {
-        margin-right: 20px;
-        justify-content: space-between;
-        box-shadow: 2px 1px 10px 3px gray;
-        font-size: 18px;
-    }
-
 }
